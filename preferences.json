@@ -24,7 +24,7 @@
         ]
     },
     {
-        "property": "uc.urltext.center",
+        "property": "mod.belle_url_text.center",
         "label": "Centers the text inside the url bar",
         "type": "dropdown",
         "defaultValue": "normal",

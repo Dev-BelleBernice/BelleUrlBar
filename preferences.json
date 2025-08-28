@@ -1,6 +1,6 @@
 [
     {
-        "property": "uc.urlbar.border-radius",
+        "property": "mod.belle_url_bar.border-radius",
         "label": "Adjusts the border radius of the url bar and its items to a certain degree",
         "type": "dropdown",
         "disabledOn": [],
@@ -41,19 +41,19 @@
         ]
     },
     {
-        "property": "uc.urlbar.border",
+        "property": "mod.belle_url_bar.border",
         "label": "Adds a border to the url bar",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.move-icon-into",
+        "property": "mod.belle_url_bar.move-icon-into",
         "label": "Move 1 button that's directly next to the url bar (you can do that by using 'Customize Toolbar') into the url bar",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.blur-intensity",
+        "property": "mod.belle_url_bar.blur-intensity",
         "label": "Enable a Background Blur when the Url Bar is focused & select its Intensity",
         "type": "dropdown",
         "disabledOn": [],
@@ -81,7 +81,7 @@
         ]
     },
     {
-        "property": "uc.urlbar.custom-bg-color.mode",
+        "property": "mod.belle_url_bar.custom-bg-color.mode",
         "label": "Enables Custom Colors for the Url Bar",
         "placeholder": "Disabled",
         "type": "dropdown",
@@ -102,7 +102,7 @@
         ]
     },
     {
-        "property": "uc.urlbar.custom-bg-color",
+        "property": "mod.belle_url_bar.custom-bg-color",
         "label": "Custom Color for the Url Bar (Dropdown above needs to be enabled)",
         "placeholder": "Enter Color Code",
         "type": "string"
@@ -113,7 +113,7 @@
         "type": "checkbox"
     },
     {
-        "property": "uc.urlbar.hide.container-info",
+        "property": "mod.belle_url_bar.hide.container-info",
         "label": "Hides the container info",
         "type": "dropdown",
         "placeholder": "Disabled",
@@ -134,49 +134,49 @@
         ]
     },
     {
-        "property": "uc.urlbar.icon.zoom.removed",
+        "property": "mod.belle_url_bar.icon.zoom.removed",
         "label": "Hides the Zoom icon",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.shield.removed",
+        "property": "mod.belle_url_bar.icon.shield.removed",
         "label": "Hides the Shield icon",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.bookmark.removed",
+        "property": "mod.belle_url_bar.icon.bookmark.removed",
         "label": "Hides the Bookmark (Star) icon",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.reader-mode.removed",
+        "property": "mod.belle_url_bar.icon.reader-mode.removed",
         "label": "Hides the Reader-Mode icon",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.pip.removed",
+        "property": "mod.belle_url_bar.icon.pip.removed",
         "label": "Hides the Picture-in-Picture icon",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.split-view.removed",
+        "property": "mod.belle_url_bar.icon.split-view.removed",
         "label": "Hides the Split View icon",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.left-side.removed",
+        "property": "mod.belle_url_bar.icon.left-side.removed",
         "label": "Hides all the icons/buttons on the left side",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.show-on-hover",
+        "property": "mod.belle_url_bar.icon.show-on-hover",
         "label": "Make all the hidden icons show when hovering the url bar",
         "type": "checkbox"
     }

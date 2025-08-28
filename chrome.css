@@ -1,21 +1,21 @@
 /* Adjust border radius of url bar and its elements */
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-border-radius="small"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-border-radius="small"]) {
   --urlbar-border-radius: 4px;
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-border-radius="medium"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-border-radius="medium"]) {
   --urlbar-border-radius: 8px;
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-border-radius="large"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-border-radius="large"]) {
   --urlbar-border-radius: 14px;
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-border-radius="xlarge"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-border-radius="xlarge"]) {
   --urlbar-border-radius: 20px;
 }
 
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-border-radius="small"],
-          #theme-Belle-Url-Bar[uc-urlbar-border-radius="medium"],
-          #theme-Belle-Url-Bar[uc-urlbar-border-radius="large"],
-          #theme-Belle-Url-Bar[uc-urlbar-border-radius="xlarge"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-border-radius="small"],
+          #theme-Belle-Url-Bar[belle-urlbar-border-radius="medium"],
+          #theme-Belle-Url-Bar[belle-urlbar-border-radius="large"],
+          #theme-Belle-Url-Bar[belle-urlbar-border-radius="xlarge"]) {
     #urlbar, #urlbar-background, #notification-popup-box, #urlbar .urlbar-page-action, #urlbar #tracking-protection-icon-container,
     #urlbar:not([breakout-extend="true"]) #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"]) #identity-icon-box,
     #urlbar:not([breakout-extend="true"]) #identity-box.chromeUI:not([pageproxystate="invalid"]) #identity-icon-box,
@@ -33,18 +33,18 @@
 }
 
 /* Centers the url text when enabled in dropdown: 1.Option: Centers the text unless url bar is focused; 2.Option: Centers the text always*/
-:root:has(#theme-Belle-Url-Bar[uc-urltext-center="normal"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urltext-center="normal"]) {
   #urlbar:not([focused]) .urlbar-input {
     text-align: center !important; 
   }
 }
-:root:has(#theme-Belle-Url-Bar[uc-urltext-center="advanced"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urltext-center="advanced"]) {
   #urlbar .urlbar-input {
     text-align: center !important; 
   }
 }
 
-@media (-moz-bool-pref: "uc.urlbar.move-icon-into") {
+@media (-moz-bool-pref: "mod.belle_url_bar.move-icon-into") {
   #page-action-buttons {
     margin-right: calc(var(--urlbar-min-height) - 1px - 4 * var(--urlbar-container-padding)) !important;
   }
@@ -53,32 +53,32 @@
     margin-inline-start: calc(-21px - 2 * var(--urlbar-icon-padding) - var(--urlbar-margin-inline)) !important;
     position: relative;
     --toolbarbutton-inner-padding: var(--urlbar-icon-padding);
-    --toolbarbutton-hover-background: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+    --toolbarbutton-hover-background: color-mix(in srgb, var(--belle-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
   }
 }
 
 /* Blurs the background when url bar is focused when toggled */
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-blur-intensity="Subtle"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-blur-intensity="Subtle"]) {
   --blur-intensity: 1px;
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-blur-intensity="Normal"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-blur-intensity="Normal"]) {
   --blur-intensity: 2px;
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-blur-intensity="RatherStrong"]) {
   --blur-intensity: 3px;
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-blur-intensity="Strong"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-blur-intensity="Strong"]) {
   --blur-intensity: 4px;
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-blur-intensity="ReallyStrong"]) {
   --blur-intensity: 6px;
 }
 
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-blur-intensity="Subtle"],
-          #theme-Belle-Url-Bar[uc-urlbar-blur-intensity="Normal"],
-          #theme-Belle-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"],
-          #theme-Belle-Url-Bar[uc-urlbar-blur-intensity="Strong"],
-          #theme-Belle-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar'])) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-blur-intensity="Subtle"],
+          #theme-Belle-Url-Bar[belle-urlbar-blur-intensity="Normal"],
+          #theme-Belle-Url-Bar[belle-urlbar-blur-intensity="RatherStrong"],
+          #theme-Belle-Url-Bar[belle-urlbar-blur-intensity="Strong"],
+          #theme-Belle-Url-Bar[belle-urlbar-blur-intensity="ReallyStrong"]:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar'])) {
   #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
     content: "";
     position: fixed;
@@ -98,36 +98,36 @@
 }
 
 /* Custom Colors for Url Bar */
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-custom-bg-color-mode="noFocus"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-custom-bg-color-mode="noFocus"]) {
     #urlbar:not([focused="true"]):not([breakout-extend="true"]) > #urlbar-background {
-        background: var(--uc-urlbar-custom-bg-color) !important;
+        background: var(--belle-urlbar-custom-bg-color) !important;
     }
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-custom-bg-color-mode="Focus"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-custom-bg-color-mode="Focus"]) {
     #urlbar:is([focused], [open]) > #urlbar-background {
-        background: var(--uc-urlbar-custom-bg-color) !important;
+        background: var(--belle-urlbar-custom-bg-color) !important;
     }
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-custom-bg-color-mode="AlwaysColor"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-custom-bg-color-mode="AlwaysColor"]) {
     #urlbar-background {
-        background: var(--uc-urlbar-custom-bg-color) !important;
+        background: var(--belle-urlbar-custom-bg-color) !important;
     }
 }
 
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-custom-bg-color-mode="AlwaysColor"],
-          #theme-Belle-Url-Bar[uc-urlbar-custom-bg-color-mode="noFocus"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-custom-bg-color-mode="AlwaysColor"],
+          #theme-Belle-Url-Bar[belle-urlbar-custom-bg-color-mode="noFocus"]) {
   #identity-icon-box, #identity-permission-box {
-    background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+    background-color: color-mix(in srgb, var(--belle-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
   }
   #tracking-protection-icon-container, .urlbar-page-action, #picture-in-picture-button, #reader-mode-button, #zen-split-views-box {
     &:hover:not([open="true"]) {
-      background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+      background-color: color-mix(in srgb, var(--belle-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
     }
   }
 }
 
 /* Adds a border to the url bar when toggled */
-@media (-moz-bool-pref: "uc.urlbar.border") {
+@media (-moz-bool-pref: "mod.belle_url_bar.border") {
   #urlbar-background {
     border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
                     color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
@@ -135,67 +135,67 @@
 }
 
 /* Hides the container info in url-bar */
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-hide-container-info="hideLabel"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-hide-container-info="hideLabel"]) {
   #userContext-label {
     display: none;
   }
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-hide-container-info="hideIcon"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-hide-container-info="hideIcon"]) {
   #userContext-indicator {
     display: none;
   }
 }
-:root:has(#theme-Belle-Url-Bar[uc-urlbar-hide-container-info="hideIconLabel"]) {
+:root:has(#theme-Belle-Url-Bar[belle-urlbar-hide-container-info="hideIconLabel"]) {
   #userContext-icons {
     display: none;
   }
 }
 
 /* Makes all the hidden icons appear on hover */
-@media not (-moz-bool-pref: "uc.urlbar.icon.show-on-hover") {
+@media not (-moz-bool-pref: "mod.belle_url_bar.icon.show-on-hover") {
   :root {
     --position-var: absolute;
     --pointer-events: none;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.show-on-hover") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.show-on-hover") {
 
   :root {
     --position-var: relative;
     --pointer-events: all;
   }
 
-  @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
+  @media (-moz-bool-pref: "mod.belle_url_bar.icon.zoom.removed") {
     #urlbar:hover #urlbar-zoom-button {
       display: block !important;
     } 
   }
-  @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
+  @media (-moz-bool-pref: "mod.belle_url_bar.icon.shield.removed") {
     #urlbar:hover #tracking-protection-icon-container, #tracking-protection-icon-container[open="true"] {
       display: block !important;
     } 
   }
-  @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
+  @media (-moz-bool-pref: "mod.belle_url_bar.icon.bookmark.removed") {
     #urlbar:hover #star-button-box, #star-button-box[open="true"] {
       display: block !important;
     } 
   }
-  @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
+  @media (-moz-bool-pref: "mod.belle_url_bar.icon.reader-mode.removed") {
     #urlbar:hover #reader-mode-button {
       display: block !important;
     } 
   }
-  @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
+  @media (-moz-bool-pref: "mod.belle_url_bar.icon.pip.removed") {
     #urlbar:hover #picture-in-picture-button {
       display: block !important;
     } 
   }
-  @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
+  @media (-moz-bool-pref: "mod.belle_url_bar.icon.split-view.removed") {
     #urlbar:hover #zen-split-views-box {
       display: block !important;
     }
   }
-  @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
+  @media (-moz-bool-pref: "mod.belle_url_bar.icon.left-side.removed") {
     #urlbar:hover #identity-box {
       display: block !important;
     } 
@@ -208,37 +208,37 @@
 }
 
 /* Removes certain buttons from the url bar (when toggled) */
-@media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.zoom.removed") {
   #urlbar-zoom-button {
     display: none !important;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.shield.removed") {
   #tracking-protection-icon-container {
     display: none !important;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.bookmark.removed") {
   #star-button-box {
     display: none !important;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.reader-mode.removed") {
   #reader-mode-button {
     display: none !important;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.pip.removed") {
   #picture-in-picture-button {
     display: none !important;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.split-view.removed") {
   #zen-split-views-box {
     display: none !important;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
+@media (-moz-bool-pref: "mod.belle_url_bar.icon.left-side.removed") {
   #identity-box {
     display: none !important;
   }

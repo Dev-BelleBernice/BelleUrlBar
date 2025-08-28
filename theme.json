@@ -2,13 +2,13 @@
     "id": "d93e67f8-e5e1-401e-9b82-f9d5bab231e6",
     "name": "Belle Url Bar",
     "description": "Get simple rounded edges, centered text, a removed border for your url bar and a background blur.",
-    "homepage": "https://github.com/Dev-BelleBernice/Zen-Themes/tree/main/SuperUrlBar",
-    "style": "https://raw.githubusercontent.com/Dev-BelleBernice/Zen-Themes/refs/heads/main/SuperUrlBar/chrome.css",
-    "readme": "https://raw.githubusercontent.com/Dev-BelleBernice/Zen-Themes/refs/heads/main/SuperUrlBar/readme.md",
-    "image": "https://raw.githubusercontent.com/Dev-BelleBernice/Zen-Themes/refs/heads/main/SuperUrlBar/image.png",
+    "homepage": "https://github.com/Dev-BelleBernice/BelleUrlBar",
+    "style": "https://raw.githubusercontent.com/Dev-BelleBernice/BelleUrlBar/refs/heads/main/chrome.css",
+    "readme": "https://raw.githubusercontent.com/Dev-BelleBernice/BelleUrlBar/refs/heads/main/readme.md",
+    "image": "https://raw.githubusercontent.com/Dev-BelleBernice/BelleUrlBar/refs/heads/main/image.png",
     "author": "BelleBernice",
     "version": "1.0.0",
-    "preferences": "https://raw.githubusercontent.com/Dev-BelleBernice/Zen-Themes/refs/heads/main/SuperUrlBar/preferences.json",
+    "preferences": "https://raw.githubusercontent.com/Dev-BelleBernice/BelleUrlBar/refs/heads/main/preferences.json",
     "tags": [
         "urlbar"
     ],

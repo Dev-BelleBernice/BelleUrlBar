@@ -9,9 +9,7 @@
     "author": "BelleBernice",
     "version": "1.0.0",
     "preferences": "https://raw.githubusercontent.com/Dev-BelleBernice/BelleUrlBar/refs/heads/main/preferences.json",
-    "tags": [
-        "urlbar"
-    ],
+    "tags": [],
     "createdAt": "2025-08-28",
     "updatedAt": "2025-08-28",
 }
